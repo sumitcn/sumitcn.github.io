@@ -1,0 +1,48 @@
+title: Sumit Chauhan
+description: My Personal Blog
+author: Sumit Chauhan
+github: https://github.com/sumitcn
+about: Footballer | OpenSource Contributer | Competitive Programmer 
+disqus_shortname: sumitcn
+google_analytics: 
+
+collections:
+  project:
+    output: true
+    permalink: /project/:path/
+
+urls:
+    - text: About Me
+      url: /about/
+    - text: Projects
+      url: /projects/
+    - text: Resume
+      url: 
+    - text: Github
+      url: https://github.com/sumitcn
+    - text: XML Feed
+      url: /feed.xml
+      
+social:
+    - icon: fa-facebook
+      link: https://www.facebook.com/golu.chauhan25
+    - icon: fa-linkedin
+      link: https://www.linkedin.com/in/sumit-chauhan-094840136/
+
+share:
+  twitter_username: #
+  fb_appid: #
+
+
+enableTags: true
+tagarray: []
+
+url: #
+baseurl: ""
+paginate: 20
+per_page: 20
+paginate_path: "/page:num/"
+markdown: kramdown
+gems:
+  - jekyll-paginate
+  - jekyll-gist
