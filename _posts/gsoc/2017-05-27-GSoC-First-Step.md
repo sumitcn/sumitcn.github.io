@@ -1,23 +1,52 @@
 ---
-id: 48
-title: How to add wishlist to shopify
-date: 2015-07-09T02:21:44+00:00
-author: Ashutosh Chaudhary
+id: 1
+title: GSoC - Head First to C++
+date: 2019-06-09T02:21:44+00:00
+author: Sumit Chauhan
 layout: post
-permalink: /how-to-add-wishlist-to-shopify/
+permalink: /GSoC-First-Step/
+comment: true
 dsq_thread_id:
-  - 3917316017
+  -
 views:
-  - 325
+  -
 sociallikes:
-  - 1
+  -
 categories:
-  - Shopify
+  -
 tags:
-  - shopify
-  - theme development
+  -
+  -
 ---
-Shopify does not provide “add wishlist” feature natively. It becomes an obvious need for theme developers. So I will help you how to add wishlist to shopify.  [This Github Repo] is all you need for a minimal effort development of this feature. So, I am going to tell how can you use the repo files and have the wishlist functionality to your shopify store. 
+**"Jenkin , why don't you go out with Pottle Bot . The patch is working on my machine"** , Whenever he post a build failure comment on my patch :(
+
+You might be wondering who is Jenkin ,Ahmm ( You are living life , Cheers )
+
+So, I got selected in Google Summer of Code'19 . If you don't know what GSOC is and funeled to this blog through facebook , Instagram or LinkedIn. Thanks for stalking and loving :)
+
+
+You still here ..
+![sumit](/static/img/avatar.jpg){:class="img-responsive"}
+
+The story started around 6 months ago , I knew there is something called Google Summer of Code  and is good opportunity for a college student.So , I started talking to people( strangers ) about GSoC and OpenSource. So . I had two goals for the semester to start something of my own and contribute to OpenSource.
+So , I started looking for the communities and started looking on their codebase. I didn't started with LibreOffice but Django and ended up with LibreOffice because of the community bonding and active members.There are some members , you would always love to talk because they are so sarcatic and helping .
+Few of the conversations at LO(LibreOffice) were like :
+
+
+{% raw %}
+* Don't call me sir or if you want to , keep the letter 's' Capital.
+* Need not to say thanks for advice , offer me a beer.
+* I use Vim ! Is that a pickup line ?
+{% endraw %}
+
+There is a reason to choose LibreOffice , I was facing problems in using LO and C++ is love. The deadly combination , right  ?
+
+
+
+
+Why OpenSource :
+It started nearly six month ago , my very first step into the OpenSource. I was wondering about doing and builing an application of my own but I lack the knowledge and experience to develop a production level application that can go into the market.
+
 
 **STEP 1**: Download the repo or clone it. you will get 3 files:
 
@@ -25,9 +54,9 @@ Shopify does not provide “add wishlist” feature natively. It becomes an obvi
 -   wishlist-page.liquid
 -   wishlist-product.liquid
 
-**STEP 2**: Go to your shopify store’s admin panel. Navigate to your theme (http://your-store-url.com/admin/themes) and choose “Edit HTML/CSS” from the dropdown of active theme. 
+**STEP 2**: Go to your shopify store’s admin panel. Navigate to your theme (http://your-store-url.com/admin/themes) and choose “Edit HTML/CSS” from the dropdown of active theme.
 
-**STEP 3**: Upload wish-list.js in “assets” directory. [<img src="http://codeasashu.tk/blog/wp-content/uploads/2015/07/add-assets-1024x318.jpg" alt="add-assets" class="aligncenter wp-image-31 size-large" width="1024" height="318" />] Now you have to create wishlist-page.liquid and wishlist-product.liquid in snippets (just above “assets”). Create both the files and copy the contents of the same files you downloaded. [<img src="http://codeasashu.tk/blog/wp-content/uploads/2015/07/wishlist.jpg" alt="wishlist" class="aligncenter wp-image-32 size-full" width="969" height="273" />] Now that you’ve uploaded the 3 files to your shopify, you can forward to next step. 
+**STEP 3**: Upload wish-list.js in “assets” directory. [<img src="http://codeasashu.tk/blog/wp-content/uploads/2015/07/add-assets-1024x318.jpg" alt="add-assets" class="aligncenter wp-image-31 size-large" width="1024" height="318" />] Now you have to create wishlist-page.liquid and wishlist-product.liquid in snippets (just above “assets”). Create both the files and copy the contents of the same files you downloaded. [<img src="http://codeasashu.tk/blog/wp-content/uploads/2015/07/wishlist.jpg" alt="wishlist" class="aligncenter wp-image-32 size-full" width="969" height="273" />] Now that you’ve uploaded the 3 files to your shopify, you can forward to next step.
 
 **STEP 4**: Now let’s get the things running. So you need 2 things:
 
@@ -37,17 +66,17 @@ Shopify does not provide “add wishlist” feature natively. It becomes an obvi
 So, open up product.liquid. What I’m going to do next is very important. So, make sure you do it carefully not making any mistake.
 
 Include the “wishlist-product.liquid” to get the “Add to wishlist” button. So include it as:
- 
+
 {% highlight ruby %}
 {% raw %}
 {% include 'wishlist-product' %}
-{% endraw %} 
+{% endraw %}
 {% endhighlight %}
 
 You can include it anywhere in product.liquid, but within “Add to cart” form. **Make sure it is outside “Add to cart” form or it won’t work**. So, for a minimal example, it will go like:
 
 {% highlight ruby %}
-{% raw %} 
+{% raw %}
 <form action="/cart/add" method="post" enctype="multipart/form-data">
 <div id="product" itemscope itemtype="http://schema.org/Product">
   <meta itemprop="url" content="{{ shop.url }}{{ product.url }}" />
@@ -70,7 +99,7 @@ You can include it anywhere in product.liquid, but within “Add to cart” form
   <div id="thumbnails">
   {% if product.images.size > 1 %}
         {% for image in product.images %}
-        {% if forloop.index <= 3 %} 
+        {% if forloop.index <= 3 %}
         <div class="thumbs"><img src="{{ image | img_url: 'small' }}"></div>
         {% endif %}
         {% endfor %}
@@ -109,14 +138,14 @@ You can include it anywhere in product.liquid, but within “Add to cart” form
 {% endraw %}
 {% endhighlight %}
 
-If you save the file, you can see a “Add to wishlist” button on product page. Remember, you must be logged-in to make the button work. We’ve completed most of the hard part. The only thing remaining is to view the items of your wishlist.  For that, see next step. 
+If you save the file, you can see a “Add to wishlist” button on product page. Remember, you must be logged-in to make the button work. We’ve completed most of the hard part. The only thing remaining is to view the items of your wishlist.  For that, see next step.
 
 **STEP 5**:  Creating a page to view wishlist items- Since there might be many pages already in your store, you should design a separate page for wishlist. Shopify provides it in much convenient way. Basic idea to get a unique page to display some unique content is to have a separate template for that page, then selecting that template in the unique page you create. Since you want wishlist page to show only wishlist items and no other bullshit, here is what you’d do:
 
 1.  Create a template for wishlist. Go to “Templates” - “Add a new template”. Select “page” from the dropdown and enter “wishlist” into textbox next to it. [<img src="http://codeasashu.tk/blog/wp-content/uploads/2015/07/wishlist-page.jpg" alt="wishlist-page" class="aligncenter wp-image-34 size-full" width="1018" height="281" />]
 2.  It will create a blank “page.wishlist.liquid” file. Enter following contents to it:
 
-{% raw %} 
+{% raw %}
 
     ```
     {% include 'wishlist-page' %}
@@ -139,4 +168,4 @@ Please do comment below if you need any help.
 
   [This Github Repo]: https://github.com/jimlakey/Shopify-Wish-List "Wishlist-Shopify"
   [<img src="/static/img/_posts/add-assets-1024x318.jpg" alt="add-assets" class="aligncenter wp-image-31 size-large" width="1024" height="318" />]: /static/img/_posts/add-assets.jpg
-  [<img src="/static/img/_posts/wishlist.jpg" alt="wishlist" class="aligncenter wp-image-32 size-full" width="969" height="273" />]: /static/img/_posts/wishlist.jpg
+  [<img src="/static/img/_posts/wishlist.jpg" alt="wishlist" class="aligncenter wp-image-32 size-full" width="969" height="273" />]: /static/img/_posts/wishlist.jpgs

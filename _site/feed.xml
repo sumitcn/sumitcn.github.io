@@ -5,13 +5,35 @@
     <description>My Personal Blog</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 18 May 2019 19:48:38 +0530</pubDate>
-    <lastBuildDate>Sat, 18 May 2019 19:48:38 +0530</lastBuildDate>
+    <pubDate>Sat, 15 Jun 2019 23:02:02 +0530</pubDate>
+    <lastBuildDate>Sat, 15 Jun 2019 23:02:02 +0530</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
-        <title>How to add wishlist to shopify</title>
-        <description>&lt;p&gt;Shopify does not provide “add wishlist” feature natively. It becomes an obvious need for theme developers. So I will help you how to add wishlist to shopify.  &lt;a href=&quot;https://github.com/jimlakey/Shopify-Wish-List&quot; title=&quot;Wishlist-Shopify&quot;&gt;This Github Repo&lt;/a&gt; is all you need for a minimal effort development of this feature. So, I am going to tell how can you use the repo files and have the wishlist functionality to your shopify store.&lt;/p&gt;
+        <title>GSoC - Head First to C++</title>
+        <description>&lt;p&gt;&lt;strong&gt;“Jenkin , why don’t you go out with Pottle Bot . The patch is working on my machine”&lt;/strong&gt; , Whenever he post a build failure comment on my patch :(&lt;/p&gt;
+
+&lt;p&gt;You might be wondering who is Jenkin ,Ahmm ( You are living life , Cheers )&lt;/p&gt;
+
+&lt;p&gt;So, I got selected in Google Summer of Code’19 . If you don’t know what GSOC is and funeled to this blog through facebook , Instagram or LinkedIn. Thanks for stalking and loving :)&lt;/p&gt;
+
+&lt;p&gt;You still here ..
+&lt;img src=&quot;/static/img/avatar.jpg&quot; alt=&quot;sumit&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The story started around 6 months ago , I knew there is something called Google Summer of Code  and is good opportunity for a college student.So , I started talking to people( strangers ) about GSoC and OpenSource. So . I had two goals for the semester to start something of my own and contribute to OpenSource.
+So , I started looking for the communities and started looking on their codebase. I didn’t started with LibreOffice but Django and ended up with LibreOffice because of the community bonding and active members.There are some members , you would always love to talk because they are so sarcatic and helping .
+Few of the conversations at LO(LibreOffice) were like :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Don’t call me sir or if you want to , keep the letter ‘s’ Capital.&lt;/li&gt;
+  &lt;li&gt;Need not to say thanks for advice , offer me a beer.&lt;/li&gt;
+  &lt;li&gt;I use Vim ! Is that a pickup line ?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There is a reason to choose LibreOffice , I was facing problems in using LO and C++ is love. The deadly combination , right  ?&lt;/p&gt;
+
+&lt;p&gt;Why OpenSource :
+It started nearly six month ago , my very first step into the OpenSource. I was wondering about doing and builing an application of my own but I lack the knowledge and experience to develop a production level application that can go into the market.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;STEP 1&lt;/strong&gt;: Download the repo or clone it. you will get 3 files:&lt;/p&gt;
 
@@ -36,13 +58,11 @@
 
 &lt;p&gt;Include the “wishlist-product.liquid” to get the “Add to wishlist” button. So include it as:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;% include &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'wishlist-product'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
- &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;% include &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'wishlist-product'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;You can include it anywhere in product.liquid, but within “Add to cart” form. &lt;strong&gt;Make sure it is outside “Add to cart” form or it won’t work&lt;/strong&gt;. So, for a minimal example, it will go like:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt; 
-&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;form&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/cart/add&quot;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;post&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;enctype&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;multipart/form-data&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;form&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/cart/add&quot;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;post&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;enctype&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;multipart/form-data&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;product&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;itemscope&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;itemtype&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://schema.org/Product&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;itemprop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;url&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;{{ shop.url }}{{ product.url }}&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;itemprop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;image&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;{{ product | img_url: 'grande' }}&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
@@ -64,7 +84,7 @@
   &amp;lt;div id=&quot;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;thumbnails&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;gt;
   {% if product.images.size &amp;gt; 1 %}
         {% for image in product.images %}
-        {% if forloop.index &amp;lt;= 3 %} 
+        {% if forloop.index &amp;lt;= 3 %}
         &amp;lt;div class=&quot;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;thumbs&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;gt;&amp;lt;img src=&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;img_url: &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'small'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;gt;&amp;lt;/div&amp;gt;
         {% endif %}
         {% endfor %}
@@ -128,16 +148,14 @@
 &lt;p&gt;Please do comment below if you need any help.&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 09 Jul 2015 07:51:44 +0530</pubDate>
-        <link>http://localhost:4000/how-to-add-wishlist-to-shopify/</link>
-        <guid isPermaLink="true">http://localhost:4000/how-to-add-wishlist-to-shopify/</guid>
-        
-        <category>shopify</category>
-        
-        <category>theme development</category>
+        <pubDate>Sun, 09 Jun 2019 07:51:44 +0530</pubDate>
+        <link>http://localhost:4000/GSoC-First-Step/</link>
+        <guid isPermaLink="true">http://localhost:4000/GSoC-First-Step/</guid>
         
         
-        <category>Shopify</category>
+        <category></category>
+        
+        <category></category>
         
       </item>
     
