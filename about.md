@@ -7,3 +7,4 @@ permalink: /about/
     <h1>Not a programmer , Just good in Copy-Paste </h1>
     <hr />
  </div>
+    
