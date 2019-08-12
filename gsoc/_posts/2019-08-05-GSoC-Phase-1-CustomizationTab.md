@@ -37,10 +37,12 @@ If my mentor would be reading this, they will be like,
 
 I have learned a lesson during GSoC that you should keep challenging yourself because there is always a someone, he will dig a little more than you and get things done. You will be awestruck. 
 
+
+<center>The world is so big yet small.</center>
 <br/>
 GSoC LibreOffice <a href="https://drive.google.com/file/d/12EPSj5BntlU7C2orACcTJjWl-m2pWDrn/view?usp=sharing">proposal</a>.
 <br/>
-<center>The world is so big yet small.</center>
+
 <br/>
 <br/>
 I started working on my project on 10 May. The first task was to create customization support for all the Notebookbar interfaces. Customization support allows users to show/hide the buttons in Notebookbar. See the magic in below images, look at  **Clone** and **Clear** tool button. 
