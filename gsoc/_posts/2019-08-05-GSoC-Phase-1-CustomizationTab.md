@@ -35,6 +35,7 @@ If my mentor would be reading this, they will be like,
 
 ![Suprise](/static/img/communitybondingmeme1.jpg){:class="img-responsive"}
 
+I have learned a lesson during GSoC that you should keep challenging yourself because there is always a someone, he will dig a little more than you and get things done. You will be awestruck. 
 
 <br/>
 GSoC LibreOffice <a href="https://drive.google.com/file/d/12EPSj5BntlU7C2orACcTJjWl-m2pWDrn/view?usp=sharing">proposal</a>.
