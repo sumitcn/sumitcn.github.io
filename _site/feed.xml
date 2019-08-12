@@ -5,9 +5,69 @@
     <description>My Personal Blog</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 06 Aug 2019 01:31:50 +0530</pubDate>
-    <lastBuildDate>Tue, 06 Aug 2019 01:31:50 +0530</lastBuildDate>
+    <pubDate>Mon, 12 Aug 2019 21:26:03 +0530</pubDate>
+    <lastBuildDate>Mon, 12 Aug 2019 21:26:03 +0530</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Customization Support</title>
+        <description>
+</description>
+        <pubDate>Mon, 12 Aug 2019 07:51:44 +0530</pubDate>
+        <link>http://localhost:4000/customization-support/</link>
+        <guid isPermaLink="true">http://localhost:4000/customization-support/</guid>
+        
+        
+        <category>gsoc</category>
+        
+        <category></category>
+        
+        <category></category>
+        
+      </item>
+    
+      <item>
+        <title>GSoC - Community Bonding Period and Phase 1</title>
+        <description>&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Download and contribute LibreOffice. Use the exclusive and premium features I added for free :P&lt;/strong&gt;&lt;/p&gt;
+&lt;center&gt; &lt;a href=&quot;https://www.libreoffice.org/&quot;&gt;Download&lt;/a&gt;&lt;/center&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;So, Google announced the list of students selected for the Google Summer of Code program,2019 and started the community bonding period. In this period we make connections with the people who have been involved with the organization for long (mentor and student relationship). We indulge in several meetings scheduled almost daily to understand the requirements of the project and how do they align with our interests. This period lasts for 3 weeks which is a pretty good amount of time. I had a great conversation with my mentors even before Google announced the list of selected students. We had already discussed the plans on how we are going to do things.&lt;/p&gt;
+
+&lt;p&gt;When I was submitting my proposal I had no idea about how I’ll approach this thing. I doubted myself at every step asking myself will I be able to complete the project? The project seemed so difficult and challenging. The codebase is so f** **g big that it would take you days to understand its flow. In my proposal, I was like .. I would do XML rendering …then create API ..then inherit this… da d blah blah …..&lt;/p&gt;
+
+&lt;p&gt;If my mentor would be reading this, they will be like,&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/img/communitybondingmeme1.jpg&quot; alt=&quot;Suprise&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I have learned a lesson during GSoC that you should keep challenging yourself. There is always a someone, he will dig a little more than you and get things done. You will be awestruck.&lt;/p&gt;
+&lt;center&gt;The world is so big yet small.&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+I started working on my project on 10 May. The first task was to create customization support for all the Notebookbar interfaces. Customization support allows users to show/hide the buttons in Notebookbar. See the magic in below images, look at  &lt;strong&gt;Clone&lt;/strong&gt; and &lt;strong&gt;Clear&lt;/strong&gt; tool button. 
+&lt;br /&gt;
+&lt;strong&gt;Image 1&lt;/strong&gt;
+&lt;img src=&quot;/static/img/customization_pre.png&quot; alt=&quot;Customization-Pre&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Image 2&lt;/strong&gt;
+&lt;img src=&quot;/static/img/customization_final.png&quot; alt=&quot;Customization-Final&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For more details on &lt;a href=&quot;/customization-support/&quot;&gt; Customization support &lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 05 Aug 2019 07:51:44 +0530</pubDate>
+        <link>http://localhost:4000/gsoc-community-bonding-and-phase-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/gsoc-community-bonding-and-phase-1/</guid>
+        
+        
+        <category>gsoc</category>
+        
+        <category></category>
+        
+        <category></category>
+        
+      </item>
     
       <item>
         <title>A dive in 6 million -  LibreOffice</title>

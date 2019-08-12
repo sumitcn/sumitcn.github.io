@@ -6,15 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="shortcut icon" href="/static/img/avatar.png" />
-        <title>A dive in 6 million -  LibreOffice - Sumit Chauhan</title>
+        <title>GSoC - Community Bonding Period and Phase 1 - Sumit Chauhan</title>
         <meta name="author" content="Sumit Chauhan" />
-        <meta name="description" content="A dive in 6 million -  LibreOffice" />
-        <meta name="keywords" content="A dive in 6 million -  LibreOffice, Sumit Chauhan, gsoc, , " />
+        <meta name="description" content="GSoC - Community Bonding Period and Phase 1" />
+        <meta name="keywords" content="GSoC - Community Bonding Period and Phase 1, Sumit Chauhan, gsoc, , " />
 
         <meta content="" property="fb:app_id">
         <meta content="Sumit Chauhan" property="og:site_name">
         
-          <meta content="A dive in 6 million -  LibreOffice" property="og:title">
+          <meta content="GSoC - Community Bonding Period and Phase 1" property="og:title">
         
         
           <meta content="article" property="og:type">
@@ -23,10 +23,10 @@
           <meta content="My Personal Blog" property="og:description">
         
         
-          <meta content="http://localhost:4000/A-dive-in-6-million-LibreOffice/" property="og:url">
+          <meta content="http://localhost:4000/gsoc-community-bonding-and-phase-1/" property="og:url">
         
         
-          <meta content="2019-06-15T07:51:44+05:30" property="article:published_time">
+          <meta content="2019-08-05T07:51:44+05:30" property="article:published_time">
           <meta content="http://localhost:4000/about/" property="article:author">
         
         
@@ -130,8 +130,8 @@
 
 
 
-<h1>A dive in 6 million -  LibreOffice</h1>
-<span class="time">15 Jun 2019</span>
+<h1>GSoC - Community Bonding Period and Phase 1</h1>
+<span class="time">05 Aug 2019</span>
 
 <span class="categories">
     &raquo; <a href="/category/gsoc">gsoc</a>, <a href="/category/"></a>, <a href="/category/"></a>
@@ -140,59 +140,33 @@
 
 
 <div class="content">
-    <div class="post"><table>
-  <tbody>
-    <tr>
-      <td><strong>“Jenkin, you should go out with Pottle Bot sometime. The patch is working on my machine”</strong> , Whenever he post a build failure comment on my patch :</td>
-    </tr>
-  </tbody>
-</table>
+    <div class="post"><hr />
 
-<p>You might be wondering who is Jenkin, Ahmm Ahmm ( Fake Cough )</p>
+<p><strong>Download and contribute LibreOffice. Use the exclusive and premium features I added for free :P</strong></p>
+<center> <a href="https://www.libreoffice.org/">Download</a></center>
+<hr />
 
-<p>So, I got selected in Google Summer of Code’19. If you don’t know about GSoC and funneled to this blog through Facebook, Instagram or LinkedIn. Thanks for loving :)</p>
+<p>So, Google announced the list of students selected for the Google Summer of Code program,2019 and started the community bonding period. In this period we make connections with the people who have been involved with the organization for long (mentor and student relationship). We indulge in several meetings scheduled almost daily to understand the requirements of the project and how do they align with our interests. This period lasts for 3 weeks which is a pretty good amount of time. I had a great conversation with my mentors even before Google announced the list of selected students. We had already discussed the plans on how we are going to do things.</p>
 
-<p><img src="/static/img/kidhappy.gif" alt="Happy-Happy" class="img-responsive" /></p>
+<p>When I was submitting my proposal I had no idea about how I’ll approach this thing. I doubted myself at every step asking myself will I be able to complete the project? The project seemed so difficult and challenging. The codebase is so f** **g big that it would take you days to understand its flow. In my proposal, I was like .. I would do XML rendering …then create API ..then inherit this… da d blah blah …..</p>
 
-<p>The story started around 6 months ago, I knew there is something called Google Summer of Code and is a good opportunity for a college student. So, I started talking to people who were in GSoC, searched the web about opensource development, started looking for the organization and their codebase. I didn’t start with LibreOffice but Django and ended up with LibreOffice because of the community bonding and active members. There are some members, you would always love to have a conversation with. Every one of them is sarcastic and helping.</p>
+<p>If my mentor would be reading this, they will be like,</p>
 
-<p>If I remember correctly, My first conversation in LibreOffice-dev was something like :</p>
+<p><img src="/static/img/communitybondingmeme1.jpg" alt="Suprise" class="img-responsive" /></p>
 
-<p><strong>Me: Hii, I want to contribute</strong></p>
+<p>I have learned a lesson during GSoC that you should keep challenging yourself. There is always a someone, he will dig a little more than you and get things done. You will be awestruck.</p>
+<center>The world is so big yet small.</center>
+<p><br />
+<br />
+I started working on my project on 10 May. The first task was to create customization support for all the Notebookbar interfaces. Customization support allows users to show/hide the buttons in Notebookbar. See the magic in below images, look at  <strong>Clone</strong> and <strong>Clear</strong> tool button. 
+<br />
+<strong>Image 1</strong>
+<img src="/static/img/customization_pre.png" alt="Customization-Pre" class="img-responsive" /></p>
 
-<p><strong>tml: Are you here for GSoC. If yes, Don’t be ashamed to say so..</strong></p>
+<p><strong>Image 2</strong>
+<img src="/static/img/customization_final.png" alt="Customization-Final" class="img-responsive" /></p>
 
-<p>I was like, are you an Oracle?</p>
-
-<p><strong>Few of the conversations at LO(LibreOffice) were like:</strong></p>
-
-<ul>
-  <li>Don’t call me sir or if you want to, keep the letter ‘s’ Capital.</li>
-  <li>Need not to say thanks for the advice , offer me a beer.</li>
-  <li>I use Vim! Is that a pickup line?</li>
-</ul>
-
-<p>The last one was addressed to me by QTCharmer : ) I bet you wouldn’t able to find her on LO-dev IRC, as far as I know, no one ever had in their first attempt. This is one of the reasons why we address people by their name or handle in organizations rather than Sir or Mam.</p>
-
-<p>Dude, it took me one month to set up the environment. I did first in Ubuntu but the first bug I solved was dependent on KDE backend so I had to install Kubuntu and then set up the environment again.</p>
-
-<p>So, My first patch was in master in early December.</p>
-
-<p><img src="/static/img/firstPatch.gif" alt="Happy-Happy" class="img-responsive" /></p>
-
-<p><strong>But wait, the patch has one comment and one deleted line only and it took me nearly 10 days</strong>.I was very happy and was proudly telling my friends I am LibreOffice Developer by showing them my name https://wiki.documentfoundation.org/Development/Developers.</p>
-
-<p><img src="/static/img/firstPatch2.gif" alt="Happy-Happy" class="img-responsive" /></p>
-
-<p>Apart from all these things, it was my love for C++ and curiosity to build a system application made me chose LibreOffice.</p>
-
-<p>The journey is going good right now, My mentors are more excited than me to see my work @andreas @szymon and the UI Team.</p>
-
-<p>I would suggest everyone to contribute in open source, you will always find an organization that fits you (Machine Learning, AI, UI/UX or whatever ). You will learn a lot of things.</p>
-
-<p>P.S : I don’t run out of variables name now !</p>
-
-<p>P.S.S : Let’s discuss the title some other time ; )</p>
+<p>For more details on <a href="/customization-support/"> Customization support </a></p>
 </div>
 
     
@@ -211,7 +185,7 @@
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 
 <!-- Facebook -->
-<div class="fb-share-button" data-href="http://localhost:4000/A-dive-in-6-million-LibreOffice/" data-layout="button_count" style="position: relative; top: -8px; left: 3px;"></div>
+<div class="fb-share-button" data-href="http://localhost:4000/gsoc-community-bonding-and-phase-1/" data-layout="button_count" style="position: relative; top: -8px; left: 3px;"></div>
 </div>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -271,16 +245,6 @@
     
         
             
-                
-                <li class="relatedPost">
-                    <a href="http://localhost:4000/gsoc-community-bonding-and-phase-1/">GSoC - Community Bonding Period and Phase 1</a>
-                    
-                        (Categories: <a href="/category/gsoc">gsoc</a>, <a href="/category/"></a>, <a href="/category/"></a>)
-                    
-                </li>
-                
-                
-            
         
             
         
@@ -307,6 +271,16 @@
     
     
         
+            
+                
+                <li class="relatedPost">
+                    <a href="http://localhost:4000/A-dive-in-6-million-LibreOffice/">A dive in 6 million -  LibreOffice</a>
+                    
+                        (Categories: <a href="/category/gsoc">gsoc</a>, <a href="/category/"></a>, <a href="/category/"></a>)
+                    
+                </li>
+                
+                
             
         
             
@@ -338,8 +312,10 @@
 
 <div class="PageNavigation">
   
+    <a class="prev" href="/A-dive-in-6-million-LibreOffice/">&laquo; A dive in 6 million -  LibreOffice</a>
   
-    <a class="next" href="/gsoc-community-bonding-and-phase-1/">GSoC - Community Bonding Period and Phase 1 &raquo;</a>
+  
+    <a class="next" href="/customization-support/">Customization Support &raquo;</a>
   
 </div>
 
