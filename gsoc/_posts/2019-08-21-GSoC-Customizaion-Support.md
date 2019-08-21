@@ -31,7 +31,7 @@ LibreOffice introduced <a href="https://youtu.be/6HUnR5IoAQk?t=25">NotebookBar u
 
 **What is done ?**
 
-I proposed to create a basic Customization dialog that would allow to user to show/hide items in the NotebookBar.You can find the dialog at Tools->Customize -> NotebookBar(tab).
+I proposed to create a basic Customization dialog that would allow the user to show/hide items in the NotebookBar.You can find the dialog at Tools->Customize -> NotebookBar(tab).
 
 **Backend Engine**
 
@@ -50,7 +50,7 @@ The class SvxNotebookbarConfigPage is inherited from SvxConfigPage. SvxConfigPag
 **Future Work**
 
 There are many <a href="https://opengrok.libreoffice.org/xref/core/cui/source/customize/SvxNotebookbarConfigPage.cxx?r=74f6acf0#105">features</a> still locked and need to finish. Also,
-Also , 
+
 * The use registrymodifications.xcu to retrieve the configuration and use them during an update is not complete.
 * It would be better to open the customization dialog based on the tab opened in the Notebookbar interface..
 
