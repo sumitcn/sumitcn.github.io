@@ -26,7 +26,7 @@
           <meta content="http://localhost:4000/customization-support/" property="og:url">
         
         
-          <meta content="2019-08-12T07:51:44+05:30" property="article:published_time">
+          <meta content="2019-08-21T07:51:44+05:30" property="article:published_time">
           <meta content="http://localhost:4000/about/" property="article:author">
         
         
@@ -84,10 +84,6 @@
                 <a href="/"><img id="about" src="/static/img/avatar.jpg" height="75px" width="75px" /></a>
                 <h1 class="author-name">Sumit Chauhan</h1>
                 
-                <div id="about">
-                    Footballer | OpenSource Contributer | Competitive Programmer
-                </div>
-                
 
                 <div class="social">
 	<ul>
@@ -131,7 +127,7 @@
 
 
 <h1>Customization Support</h1>
-<span class="time">12 Aug 2019</span>
+<span class="time">21 Aug 2019</span>
 
 <span class="categories">
     &raquo; <a href="/category/gsoc">gsoc</a>, <a href="/category/"></a>, <a href="/category/"></a>
@@ -140,7 +136,41 @@
 
 
 <div class="content">
-    <div class="post">
+    <div class="post"><p><strong>What is Customization Suppport ?</strong></p>
+
+<p>LibreOffice introduced <a href="https://youtu.be/6HUnR5IoAQk?t=25">NotebookBar user interface</a> in version 6.2 . Customization Support allows users a customize NotebookBar by changing the visibility of buttons.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/363QTGaKgJU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<p><strong>What is done ?</strong></p>
+
+<p>I proposed to create a basic Customization dialog that would allow to user to show/hide items in the NotebookBar.You can find the dialog at Tools-&gt;Customize -&gt; NotebookBar(tab).</p>
+
+<p><strong>Backend Engine</strong></p>
+
+<p>The customization feature was previously available for traditional toolbars. Toolbars have .xml files whereas Notebookbar has .ui files. This problem didn’t allow us to reuse the code.</p>
+
+<p>The solution was to modify the .ui files. Then, store and reload them from the user directory. We also stored the modified data in registry modifications.xcu so that configurations can be retrieved if there is a version update.
+<a href="https://opengrok.libreoffice.org/xref/core/cui/source/customize/CustomNotebookbarGenerator.cxx">Code</a></p>
+
+<p><a href="http://www.xmlsoft.org/">Libxml2</a> is used to parse the .ui files.</p>
+
+<p><strong>Customization Dialog</strong></p>
+
+<p>The class SvxNotebookbarConfigPage is inherited from SvxConfigPage. SvxConfigPage is a base class for all the customization dialog in LibreOffice.
+<a href="https://opengrok.libreoffice.org/xref/core/cui/source/customize/SvxNotebookbarConfigPage.cxx">Code</a></p>
+
+<p><strong>Future Work</strong></p>
+
+<p>There are many <a href="https://opengrok.libreoffice.org/xref/core/cui/source/customize/SvxNotebookbarConfigPage.cxx?r=74f6acf0#105">features</a> still locked and need to finish. Also,
+Also ,</p>
+<ul>
+  <li>The use registrymodifications.xcu to retrieve the configuration and use them during an update is not complete.</li>
+  <li>It would be better to open the customization dialog based on the tab opened in the Notebookbar interface..</li>
+</ul>
+
+<p>Notebookbar extension patches : <a href="https://gerrit.libreoffice.org/#/q/sumit+customization"> Gerrit </a></p>
+
 </div>
 
     
@@ -178,6 +208,20 @@
     
         
             
+                
+                <div class="panel-body">
+                <h4>Related Posts</h4>
+                <ul>
+                
+                <li class="relatedPost">
+                    <a href="http://localhost:4000/extension-support/">Extension Support</a>
+                    
+                        (Categories: <a href="/category/gsoc">gsoc</a>, <a href="/category/"></a>, <a href="/category/"></a>)
+                    
+                </li>
+                
+                
+            
         
             
         
@@ -205,10 +249,33 @@
     
         
             
-                
-                <div class="panel-body">
-                <h4>Related Posts</h4>
-                <ul>
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
                 
                 <li class="relatedPost">
                     <a href="http://localhost:4000/gsoc-community-bonding-and-phase-1/">GSoC - Community Bonding Period and Phase 1</a>
@@ -288,6 +355,8 @@
   
     <a class="prev" href="/gsoc-community-bonding-and-phase-1/">&laquo; GSoC - Community Bonding Period and Phase 1</a>
   
+  
+    <a class="next" href="/extension-support/">Extension Support &raquo;</a>
   
 </div>
 

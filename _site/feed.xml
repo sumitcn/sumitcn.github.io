@@ -5,15 +5,129 @@
     <description>My Personal Blog</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Aug 2019 22:03:59 +0530</pubDate>
-    <lastBuildDate>Mon, 12 Aug 2019 22:03:59 +0530</lastBuildDate>
+    <pubDate>Wed, 21 Aug 2019 16:57:50 +0530</pubDate>
+    <lastBuildDate>Wed, 21 Aug 2019 16:57:50 +0530</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
-        <title>Customization Support</title>
-        <description>
+        <title>Extension Support</title>
+        <description>&lt;p&gt;&lt;strong&gt;What is Extension Suppport ?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Extension Support allows users to add extensions in NotebookBar. There is an extension tab in all the NotebookBar interfaces where the added extension will be available.Add extension: Tool -&amp;gt; Extension Manager.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/img/extensionsupport.png&quot; alt=&quot;extension&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Schema for Extension Developer&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;There are two ways of adding an extension.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; To add an extension under Extension Tab:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;node&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;oor:name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;OfficeNotebookBar&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;node&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;oor:name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;*.OfficeNotebookBar&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;oor:op=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;replace&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;node&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;oor:name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;m001&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;oor:op=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;replace&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;prop&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;oor:name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;URL&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;oor:type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;xs:string&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;value&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/prop&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;prop&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;oor:name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Title&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;oor:type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;xs:string&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;value&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/prop&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;prop&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;oor:name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ImageIdentifier&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;oor:type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;xs:string&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;value&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/prop&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;prop&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;oor:name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Target&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;oor:type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;xs:string&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;value&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/prop&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;prop&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;oor:name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Context&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;oor:type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;xs:string&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;value&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/prop&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;prop&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;oor:name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ControlType&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;oor:type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;xs:string&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;value&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/prop&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;prop&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;oor:name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Width&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;oor:type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;xs:string&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;value&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/prop&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;prop&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;oor:name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Style&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;oor:type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;xs:string&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;value&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/prop&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/node&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/node&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/node&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Developers should add the following code in the addons.xcu to make an extension compatible for Notebookbar.For more &lt;a href=&quot;https://opengrok.libreoffice.org/xref/core/officecfg/registry/schema/org/openoffice/Office/Addons.xcs#338&quot;&gt;reading &lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt; To add extension anywhere in the Notebookbar.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://opengrok.libreoffice.org/xref/core/officecfg/registry/schema/org/openoffice/Office/Addons.xcs#298&quot;&gt;Schema &lt;/a&gt; is available here but the backend is still under progress.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What is done ?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The task to add extension under the extension tab is almost finished. There are some open patches and expected to be finished soon.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Future Work&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The task to add extension anywhere in the NotebookBar&lt;/li&gt;
+  &lt;li&gt;Checking the compatibility with other Notebookbar interfaces(other than Tabbed) and refine the existing work.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Notebookbar extension patches &lt;a href=&quot;https://gerrit.libreoffice.org/#/q/sumit+extension&quot;&gt;Gerrit&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Extensions compatible with Notebookbar : &lt;a href=&quot;https://drive.google.com/drive/folders/1cl_sr201_pnnOPp-Ka--zwKseQZB7oAf?usp=sharing&quot;&gt;Download&lt;/a&gt;&lt;/p&gt;
+
 </description>
-        <pubDate>Mon, 12 Aug 2019 07:51:44 +0530</pubDate>
+        <pubDate>Wed, 21 Aug 2019 07:51:44 +0530</pubDate>
+        <link>http://localhost:4000/extension-support/</link>
+        <guid isPermaLink="true">http://localhost:4000/extension-support/</guid>
+        
+        
+        <category>gsoc</category>
+        
+        <category></category>
+        
+        <category></category>
+        
+      </item>
+    
+      <item>
+        <title>Customization Support</title>
+        <description>&lt;p&gt;&lt;strong&gt;What is Customization Suppport ?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;LibreOffice introduced &lt;a href=&quot;https://youtu.be/6HUnR5IoAQk?t=25&quot;&gt;NotebookBar user interface&lt;/a&gt; in version 6.2 . Customization Support allows users a customize NotebookBar by changing the visibility of buttons.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/363QTGaKgJU&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;strong&gt;What is done ?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I proposed to create a basic Customization dialog that would allow to user to show/hide items in the NotebookBar.You can find the dialog at Tools-&amp;gt;Customize -&amp;gt; NotebookBar(tab).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Backend Engine&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The customization feature was previously available for traditional toolbars. Toolbars have .xml files whereas Notebookbar has .ui files. This problem didn’t allow us to reuse the code.&lt;/p&gt;
+
+&lt;p&gt;The solution was to modify the .ui files. Then, store and reload them from the user directory. We also stored the modified data in registry modifications.xcu so that configurations can be retrieved if there is a version update.
+&lt;a href=&quot;https://opengrok.libreoffice.org/xref/core/cui/source/customize/CustomNotebookbarGenerator.cxx&quot;&gt;Code&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.xmlsoft.org/&quot;&gt;Libxml2&lt;/a&gt; is used to parse the .ui files.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Customization Dialog&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The class SvxNotebookbarConfigPage is inherited from SvxConfigPage. SvxConfigPage is a base class for all the customization dialog in LibreOffice.
+&lt;a href=&quot;https://opengrok.libreoffice.org/xref/core/cui/source/customize/SvxNotebookbarConfigPage.cxx&quot;&gt;Code&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Future Work&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;There are many &lt;a href=&quot;https://opengrok.libreoffice.org/xref/core/cui/source/customize/SvxNotebookbarConfigPage.cxx?r=74f6acf0#105&quot;&gt;features&lt;/a&gt; still locked and need to finish. Also,
+Also ,&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;The use registrymodifications.xcu to retrieve the configuration and use them during an update is not complete.&lt;/li&gt;
+  &lt;li&gt;It would be better to open the customization dialog based on the tab opened in the Notebookbar interface..&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Notebookbar extension patches : &lt;a href=&quot;https://gerrit.libreoffice.org/#/q/sumit+customization&quot;&gt; Gerrit &lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 21 Aug 2019 07:51:44 +0530</pubDate>
         <link>http://localhost:4000/customization-support/</link>
         <guid isPermaLink="true">http://localhost:4000/customization-support/</guid>
         
