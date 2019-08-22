@@ -1,7 +1,7 @@
 ---
 id: 5
 title: GSoC'19 Final Report
-date: 2019-08-21T02:21:44+00:00
+date: 2019-08-22T02:21:44+00:00
 author: Sumit Chauhan
 layout: post
 permalink: /gsoc-final-report/
