@@ -5,9 +5,75 @@
     <description>My Personal Blog</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 21 Aug 2019 16:57:50 +0530</pubDate>
-    <lastBuildDate>Wed, 21 Aug 2019 16:57:50 +0530</lastBuildDate>
+    <pubDate>Thu, 22 Aug 2019 21:29:11 +0530</pubDate>
+    <lastBuildDate>Thu, 22 Aug 2019 21:29:11 +0530</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>GSoC'19 Final Report</title>
+        <description>&lt;p&gt;&lt;strong&gt;Work Done :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Created customization support for Notebookbar&lt;sup&gt;&lt;a href=&quot;/customization-support/&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+  &lt;li&gt;Created extension support for Notebookbar&lt;sup&gt;&lt;a href=&quot;/extension-support/&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Customization Support:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Rendering notebookbar*.ui file from user/share directory - &lt;a href=&quot;https://cgit.freedesktop.org/libreoffice/core/commit/?id=889a4fed08aecfd45e5706af27510e40932f2732&quot;&gt;Patch&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Using registrymodifications.xcu for storing customized uiitem data - &lt;a href=&quot;https://cgit.freedesktop.org/libreoffice/core/commit/?id=c473c5b462f33df439b4b62b394c5d7811a05c7c&quot;&gt;Patch&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;UI for the Notebookbar Customization tab - &lt;a href=&quot;https://cgit.freedesktop.org/libreoffice/core/commit/?id=015dc88a595c1c92d2b724cd868aecb07199f995&quot;&gt;Patch&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Reload Notebookbar, when customization is being done - &lt;a href=&quot;https://cgit.freedesktop.org/libreoffice/core/commit/?id=6b888ac476fe6ac2ee96c7086cb8c24249f08473&quot;&gt;Patch&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Category Target, now available for customization tab - &lt;a href=&quot;https://cgit.freedesktop.org/libreoffice/core/commit/?id=7eab1e14c5874901757a291609f289911ac64031&quot;&gt;Patch&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Category Target and Function Target enhanced in customization Tab- &lt;a href=&quot;https://cgit.freedesktop.org/libreoffice/core/commit/?id=9105b85c708f42024ce063b9a944466c0afdfe9a&quot;&gt;Patch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Extension Support :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Addons(extension) support is extended for NotebookBar - &lt;a href=&quot;https://cgit.freedesktop.org/libreoffice/core/commit/?id=147e820cc1bd7110331a6ea73db678a4a6c324e0 &quot;&gt; Patch &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Engine to add Extension inside extension tab in NotebookBar - &lt;a href=&quot;https://cgit.freedesktop.org/libreoffice/core/commit/?id=fbcd5f074ca3dc105f4fe45b6975c6de2bf60f35&quot;&gt; Patch &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Patch fixes the image rendering issue of extension in NotebookBar &lt;a href=&quot;https://cgit.freedesktop.org/libreoffice/core/commit/?id=22f2ecbcabf3928d5486690ca6465b7b37bc8a10&quot;&gt; Patch &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Extension support for gtkmenuItem and notebookbar.ui file added for writer &lt;a href=&quot;https://cgit.freedesktop.org/libreoffice/core/commit/?id=7b0dd98941911c686c0d127810d1c333df5026c3&quot;&gt; Patch &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;GtkWidget for the priority of extension under Extension Tab &lt;a href=&quot;https://gerrit.libreoffice.org/#/c/76987/&quot;&gt; Patch &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://gerrit.libreoffice.org/#/q/sumit+chauhan&quot;&gt;Gerrit&lt;/a&gt; for more details and patches.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;To do:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Customization:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;There are many &lt;a href=&quot;https://opengrok.libreoffice.org/xref/core/cui/source/customize/SvxNotebookbarConfigPage.cxx?r=74f6acf0#105&quot;&gt;features&lt;/a&gt; still locked and need to finish. Also,&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The use registrymodifications.xcu to retrieve the configuration and use them during an update is not complete.&lt;/li&gt;
+  &lt;li&gt;It would be better to open the customization dialog based on the tab opened in the Notebookbar interface.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Extension :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The task to add extension anywhere in the NotebookBar&lt;/li&gt;
+  &lt;li&gt;Checking the compatibility with other Notebookbar interfaces(other than Tabbed) and refine the existing work.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;** Follow &lt;a href=&quot;/customization-support/&quot;&gt;[1]&lt;/a&gt; , &lt;a href=&quot;/extension-support/&quot;&gt;[2]&lt;/a&gt; for more details.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 21 Aug 2019 07:51:44 +0530</pubDate>
+        <link>http://localhost:4000/gsoc-final-report/</link>
+        <guid isPermaLink="true">http://localhost:4000/gsoc-final-report/</guid>
+        
+        
+        <category>gsoc</category>
+        
+        <category></category>
+        
+        <category></category>
+        
+      </item>
     
       <item>
         <title>Extension Support</title>
@@ -99,7 +165,7 @@
 
 &lt;p&gt;&lt;strong&gt;What is done ?&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;I proposed to create a basic Customization dialog that would allow to user to show/hide items in the NotebookBar.You can find the dialog at Tools-&amp;gt;Customize -&amp;gt; NotebookBar(tab).&lt;/p&gt;
+&lt;p&gt;I proposed to create a basic Customization dialog that would allow the user to show/hide items in the NotebookBar.You can find the dialog at Tools-&amp;gt;Customize -&amp;gt; NotebookBar(tab).&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Backend Engine&lt;/strong&gt;&lt;/p&gt;
 
@@ -117,11 +183,11 @@
 
 &lt;p&gt;&lt;strong&gt;Future Work&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;There are many &lt;a href=&quot;https://opengrok.libreoffice.org/xref/core/cui/source/customize/SvxNotebookbarConfigPage.cxx?r=74f6acf0#105&quot;&gt;features&lt;/a&gt; still locked and need to finish. Also,
-Also ,&lt;/p&gt;
+&lt;p&gt;There are many &lt;a href=&quot;https://opengrok.libreoffice.org/xref/core/cui/source/customize/SvxNotebookbarConfigPage.cxx?r=74f6acf0#105&quot;&gt;features&lt;/a&gt; still locked and need to finish. Also,&lt;/p&gt;
+
 &lt;ul&gt;
   &lt;li&gt;The use registrymodifications.xcu to retrieve the configuration and use them during an update is not complete.&lt;/li&gt;
-  &lt;li&gt;It would be better to open the customization dialog based on the tab opened in the Notebookbar interface..&lt;/li&gt;
+  &lt;li&gt;It would be better to open the customization dialog based on the tab opened in the Notebookbar interface.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Notebookbar extension patches : &lt;a href=&quot;https://gerrit.libreoffice.org/#/q/sumit+customization&quot;&gt; Gerrit &lt;/a&gt;&lt;/p&gt;
@@ -156,10 +222,13 @@ Also ,&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/static/img/communitybondingmeme1.jpg&quot; alt=&quot;Suprise&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
 
+&lt;p&gt;I have learned a lesson during GSoC that you should keep challenging yourself because there is always a someone, he will dig a little more than you and get things done. You will be awestruck.&lt;/p&gt;
+
+&lt;center&gt;The world is so big yet small.&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;
 GSoC LibreOffice &lt;a href=&quot;https://drive.google.com/file/d/12EPSj5BntlU7C2orACcTJjWl-m2pWDrn/view?usp=sharing&quot;&gt;proposal&lt;/a&gt;.
 &lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;The world is so big yet small.&lt;/center&gt;
+
 &lt;p&gt;&lt;br /&gt;
 &lt;br /&gt;
 I started working on my project on 10 May. The first task was to create customization support for all the Notebookbar interfaces. Customization support allows users to show/hide the buttons in Notebookbar. See the magic in below images, look at  &lt;strong&gt;Clone&lt;/strong&gt; and &lt;strong&gt;Clear&lt;/strong&gt; tool button. 

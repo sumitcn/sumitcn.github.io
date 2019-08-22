@@ -52,7 +52,7 @@ The class SvxNotebookbarConfigPage is inherited from SvxConfigPage. SvxConfigPag
 There are many <a href="https://opengrok.libreoffice.org/xref/core/cui/source/customize/SvxNotebookbarConfigPage.cxx?r=74f6acf0#105">features</a> still locked and need to finish. Also,
 
 * The use registrymodifications.xcu to retrieve the configuration and use them during an update is not complete.
-* It would be better to open the customization dialog based on the tab opened in the Notebookbar interface..
+* It would be better to open the customization dialog based on the tab opened in the Notebookbar interface.
 
 Notebookbar extension patches : <a href="https://gerrit.libreoffice.org/#/q/sumit+customization"> Gerrit </a>
 
